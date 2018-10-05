@@ -50,7 +50,7 @@ body {
 
 .header-wrapper {
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 }
 
 .header-wrapper,
@@ -74,14 +74,13 @@ body {
 }
 
 .footer {
-    padding-top: 30px;
-    padding-bottom: 300px;
     background-color: #f0eff1;
+    padding: 30px 50px 300px 50px;
 }
 
 .logo {
     margin-top: 40px;
-    display: block;
+    /*display: block;*/
 }
 
 a:hover {
@@ -116,6 +115,7 @@ a {
     font-size: 2em;
     color: #000;
     margin-bottom: 40px;
+    margin-top: 0;
     text-transform: uppercase;
 }
 
@@ -124,8 +124,20 @@ a {
 }
 
 .content-copy p {
-    font-size: 1em;
+    font-size: 1.3em;
     color: #000;
+}
+
+.page-content {
+    margin: 0 50px;
+}
+
+.open span {
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    margin: 10px 0;
+    display: block;
 }
 
 @media screen and (max-height: 450px) {
