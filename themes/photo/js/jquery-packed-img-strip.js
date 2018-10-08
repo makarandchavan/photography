@@ -1,6 +1,7 @@
 // https://learn.jquery.com/plugins/basic-plugin-creation/
+var Drupal = Drupal || {};
 
-(function($) {
+(function ($, Drupal, Bootstrap) {
   //noinspection JSAnnotator
   $.fn.pack = function(options) {
     var settings = $.extend({
@@ -24,4 +25,4 @@
     return this;
     // });
   };
-})(jQuery);
+})(window.jQuery, window.Drupal, window.Drupal.bootstrap);

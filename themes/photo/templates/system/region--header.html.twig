@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{% if content %}
+  <div class="row">
+    <div class="col-lg-3">
+      {{ content }}
+    </div>
+    <div class="col-lg-6 text-center">
+      <a href="/" class="logo"><img src="/{{ directory }}/img/logo.jpg" alt="Alexandre"></a>
+    </div>
+    <div class="col-lg-3">
+      <div class="lang text-right">
+        <a href="/" class="active">EN</a> / <a href="/it">IT</a>
+      </div>
+    </div>
+  </div>
+{% endif %}
