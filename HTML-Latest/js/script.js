@@ -1,7 +1,21 @@
+$(window).on('load', function() {
+    $('.pack').pack();
+});
+
 $(function(){
 	"use strict";
+	var photoCarousel = $('.photo-slider');
 
-	$('.pack').pack();
+	if (photoCarousel.length > 0) {
+		$(photoCarousel).slick({
+		  infinite: false,
+		  speed: 300,
+		  slidesToShow: 1,
+		  adaptiveHeight: true,
+		  prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+		  nextArrow: '<button type="button" class="slick-next">Next</button>'
+		});
+	}
 
 	var openNav = $('.open'),
 		closeNav = $('.closebtn'),

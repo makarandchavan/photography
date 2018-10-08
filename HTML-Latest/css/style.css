@@ -129,7 +129,7 @@ a {
 }
 
 .page-content {
-    margin: 0 50px;
+    margin: 0 25px;
 }
 
 .open span {
@@ -140,7 +140,40 @@ a {
     display: block;
 }
 
+.slick-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.photo-slider {
+    width: 70%; 
+    margin: 0 auto;
+}
+
+.img-slider {
+    margin-bottom: 200px;
+    margin-top: 40px;
+}
+
 @media screen and (max-height: 450px) {
   /*.sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}*/
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .page-content {
+        margin: 0 50px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+
 }
