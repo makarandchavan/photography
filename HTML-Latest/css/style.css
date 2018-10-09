@@ -25,6 +25,7 @@ body {
     color: #fff;
     display: block;
     transition: 0.3s;
+    text-transform: capitalize;
 }
 
 .sidenav a:hover {
@@ -155,6 +156,27 @@ a {
     margin-top: 40px;
 }
 
+.breadcrumb {
+    margin-bottom: 50px;
+}
+
+.back-btn {
+    margin-top: 30px; 
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.press img {
+    width: 40%;
+    height: auto;
+}
+
+.about {
+    width: 50%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
 @media screen and (max-height: 450px) {
   /*.sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}*/
@@ -164,6 +186,16 @@ a {
 @media (min-width: 768px) {
     .page-content {
         margin: 0 50px;
+    }
+
+    .press img {
+        width: 20%;
+        height: auto;
+    }
+
+    .about {
+        width: 30%;
+        height: auto;
     }
 }
 
