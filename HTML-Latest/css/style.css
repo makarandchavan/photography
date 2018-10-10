@@ -3,6 +3,17 @@ body {
     font-weight: lighter;
     color: #000;
     background-color: #fff;
+
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+body.load {
+    opacity: 1;
 }
 
 .sidenav {
@@ -177,6 +188,7 @@ a {
     margin-bottom: 50px;
 }
 
+
 @media screen and (max-height: 450px) {
   /*.sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}*/
@@ -196,6 +208,14 @@ a {
     .about {
         width: 30%;
         height: auto;
+    }
+
+    div.pack .one-grid img {
+        width: 33.2%;
+    }
+
+    div.pack .two-grid img {
+        width: 66.1%;
     }
 }
 
