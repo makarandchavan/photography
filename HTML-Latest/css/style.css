@@ -200,7 +200,7 @@ a {
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
+@media (min-width: 992px) {
     
 }
 

@@ -6,22 +6,19 @@ $(function(){
 	"use strict";
 
 	var photoCarousel = $('.photo-slider');
-	// var imageIndex;
 
-	// $('.images a').on('click', function(){
-	// 	imageIndex = $(this).data('index');
-	// 	localStorage.setItem('index', imageIndex);
-	// });
+	$('.images').find('a').on('click', function(){
+		var imageIndex = $(this).data('index');
+		localStorage.setItem('index', imageIndex);
+	});
 
 	if (photoCarousel.length > 0) {
 		
-		// var indexVal = localStorage.getItem('index');
-		// parseInt(indexVal);
-		// console.log(typeof indexVal);
-
+		var indexVal = parseInt(localStorage.getItem('index'));
+		console.log(indexVal);
 		$(photoCarousel).slick({
 		  infinite: false,
-		  // initialSlide: 0,
+		  initialSlide: indexVal,
 		  speed: 300,
 		  slidesToShow: 1,
 		  adaptiveHeight: true,
