@@ -18,24 +18,26 @@
  */
 #}
 {% if items %}
-  <div id="mySidenav" class="sidenav">
-    <a href="#" class="closebtn">&times;</a>
-  {% for item in items %}
-    {%
-      set item_classes = [
-        item.is_expanded and item.below ? 'expanded',
-        item.is_expanded and menu_level == 0 and item.below ? 'dropdown',
-        item.in_active_trail ? 'active',
-      ]
-    %}
-    <a href="{{ item.url }}" class="{{ item_classes }}">{{ item.title }}</a>
-  {% endfor %}
-  </div>
-  <div class="open">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
+  <div class="col-lg-3">
+    <div id="mySidenav" class="sidenav">
+      <a href="#" class="closebtn">&times;</a>
+    {% for item in items %}
+      {%
+        set item_classes = [
+          item.is_expanded and item.below ? 'expanded',
+          item.is_expanded and menu_level == 0 and item.below ? 'dropdown',
+          item.in_active_trail ? 'active',
+        ]
+      %}
+      <a href="{{ item.url }}" class="{{ item_classes }}">{{ item.title }}</a>
+    {% endfor %}
+    </div>
+    <div class="open">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 {% endif %}
 

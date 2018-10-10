@@ -4,6 +4,9 @@ var Drupal = Drupal || {};
     "use strict";
 	$(window).on('load', function() {
 	    $('.pack').pack();
+	    if (typeof CKEDITOR !== "undefined") {
+	      CKEDITOR.config.autoParagraph = false;
+	    }
 	});
 	var photoCarousel = $('.photo-slider');
 
