@@ -23,7 +23,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 45%;
 
     display: block;
 
@@ -66,12 +66,12 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'Glyphicons Halflings';
+    font-family: 'themify';
     font-size: 40px;
     line-height: 1;
 
-    opacity: .75;
-    color: #f0eff1;
+    opacity: 1;
+    color: #aeaeae;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -88,7 +88,7 @@
 }
 .slick-prev:before
 {
-    content: '\e079';
+    content: '\e64a';
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,7 +106,7 @@
 }
 .slick-next:before
 {
-    content: '\e080';
+    content: '\e649';
 }
 [dir='rtl'] .slick-next:before
 {

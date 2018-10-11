@@ -9,10 +9,19 @@ var Drupal = Drupal || {};
 	    }
 	});
 	var photoCarousel = $('.photo-slider');
+	$('body').addClass("load");
+
+	$('.images').find('a').on('click', function(){
+		var imageIndex = $(this).data('index');
+		localStorage.setItem('index', imageIndex);
+	});
 
 	if (photoCarousel.length > 0) {
+		var indexVal = parseInt(localStorage.getItem('index'));
+
 		$(photoCarousel).slick({
-		  infinite: false,
+		  infinite: true,
+		  initialSlide: indexVal,
 		  speed: 300,
 		  slidesToShow: 1,
 		  adaptiveHeight: true,

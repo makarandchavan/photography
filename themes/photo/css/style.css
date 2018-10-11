@@ -3,6 +3,17 @@ body {
     font-weight: lighter;
     color: #000;
     background-color: #fff;
+
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+body.load {
+    opacity: 1;
 }
 
 .sidenav {
@@ -25,6 +36,7 @@ body {
     color: #fff;
     display: block;
     transition: 0.3s;
+    text-transform: capitalize;
 }
 
 .sidenav a:hover {
@@ -155,6 +167,28 @@ a {
     margin-top: 40px;
 }
 
+.breadcrumb {
+    margin-bottom: 50px;
+}
+
+.back-btn {
+    margin-top: 30px; 
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.press img {
+    width: 40%;
+    height: auto;
+}
+
+.about {
+    width: 50%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+
 @media screen and (max-height: 450px) {
   /*.sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}*/
@@ -165,10 +199,28 @@ a {
     .page-content {
         margin: 0 50px;
     }
+
+    .press img {
+        width: 20%;
+        height: auto;
+    }
+
+    .about {
+        width: 30%;
+        height: auto;
+    }
+
+    div.pack .one-grid img {
+        width: 33.2%;
+    }
+
+    div.pack .two-grid img {
+        width: 66.1%;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
+@media (min-width: 992px) {
     
 }
 
