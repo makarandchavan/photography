@@ -6,7 +6,19 @@ $(function(){
 	"use strict";
 
 	var photoCarousel = $('.photo-slider');
+	var lastRow = $('.images .row:last-child');
+	var lastCol = $('.images .row:last-child div');
+	var imgLength = $('.images .row:last-child img').length;
 	$('body').addClass("load");
+
+	if (imgLength === 1) {
+		lastCol.removeClass('col-lg-12');
+		lastCol.addClass('col-lg-4 col-sm-4');
+
+	} else if (imgLength === 2) {
+		lastCol.removeClass('col-lg-12');
+		lastCol.addClass('col-lg-6 col-sm-6');
+	}
 
 	$('.images').find('a').on('click', function(){
 		var imageIndex = $(this).data('index');
