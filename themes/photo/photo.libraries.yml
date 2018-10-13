@@ -1,8 +1,12 @@
 global-styling:
   css:
     theme:
-      css/style.css: {}
       css/jquery-packed-img-strip.css: {}
+      css/slick.css: {}
+      css/slick-theme.css: {}
+      css/style.css: {}
+      css/themify-icons.css: {}
   js:
     js/jquery-packed-img-strip.js: {}
+    js/slick.min.js: {}
     js/script.js: {}

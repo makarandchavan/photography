@@ -1,8 +1,31 @@
 <?php
 
-/**
- * @file
- * Bootstrap sub-theme.
- *
- * Place your custom PHP code in this file.
- */
+
+
+function photo_preprocess_taxonomy_term(&$vars) {
+  $vars['custom_desc'] = $vars['content']['description'];
+  //$vars['custom_img_link'] = $vars['content']['field_image_link'];
+  $count = 1;
+  $index = 0;
+  $array_set = 0;
+  foreach ($vars['content']['field_image_link']['#items'] as $key => $item) {
+  	if($count < 3) {
+  		$item = $item->value;
+		$fc = \Drupal\field_collection\Entity\FieldCollectionItem::load($item);	  
+  		$vars['custom_img_link'][$array_set][$key]['url'] = '/node/' . $fc->get('field_landing_page')->getString();
+  		$vars['custom_img_link'][$array_set][$key]['img'] = file_create_url($fc->get('field_image')->entity->uri->value);
+  		$vars['custom_img_link'][$array_set][$key]['key'] = $index;
+  		$count++;
+  	}
+  	else {
+  		$item = $item->value;
+		$fc = \Drupal\field_collection\Entity\FieldCollectionItem::load($item);	  
+  		$vars['custom_img_link'][$array_set][$key]['url'] = '/node/' . $fc->get('field_landing_page')->getString();
+  		$vars['custom_img_link'][$array_set][$key]['img'] = file_create_url($fc->get('field_image')->entity->uri->value);
+  		$vars['custom_img_link'][$array_set][$key]['key'] = $index;
+  		$array_set++;
+  		$count = 1;
+  	}
+  	$index++;
+  }
+}
