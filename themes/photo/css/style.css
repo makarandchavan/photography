@@ -188,6 +188,56 @@ a {
     margin-bottom: 50px;
 }
 
+.has-error .form-control {
+    box-shadow: none;
+}
+
+textarea.form-control {
+    height: 250px;
+}
+
+.form-control {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.form-actions .btn, .form-actions .btn-group {
+    margin-right: 0;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+#edit-actions {
+    text-align: right;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.form-group {
+    margin-bottom: 70px;
+}
+
+label {
+    font-weight: normal;
+}
+
+.has-error .form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+
 
 @media screen and (max-height: 450px) {
   /*.sidenav {padding-top: 15px;}
