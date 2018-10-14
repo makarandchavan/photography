@@ -198,6 +198,7 @@ textarea.form-control {
 
 .form-control {
     box-shadow: none;
+    border-radius: 0;
 }
 
 .form-actions .btn, .form-actions .btn-group {
