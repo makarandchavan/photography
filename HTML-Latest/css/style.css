@@ -238,6 +238,11 @@ label {
     box-shadow: none;
 }
 
+.copyright {
+    font-size: 12px;
+    margin-top: 50px;
+}
+
 
 @media screen and (max-height: 450px) {
   /*.sidenav {padding-top: 15px;}
