@@ -46,6 +46,6 @@
  */
 #}
 {% block content %}
-  {{ content }}
+  {{ content|render|striptags('<div><a><img>')|raw }}
 {% endblock %}
 
