@@ -71,7 +71,6 @@ body.load {
 }
 
 .list-group {
-    float: left;
     margin-right: 50px;
 }
 
@@ -104,7 +103,7 @@ a {
     color: #000;
 }
 
-.lang a.active {
+.lang a.is-active {
     text-decoration: underline;
 }
 
@@ -271,6 +270,10 @@ label {
 
     div.pack .two-grid img {
         width: 66.1%;
+    }
+
+    .list-group {
+        display: table-cell;
     }
 }
 
