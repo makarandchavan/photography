@@ -11,6 +11,10 @@ $(function(){
 	var imgLength = $('.images .row:last-child img').length;
 	$('body').addClass("load");
 
+	$("img").on("contextmenu",function(){
+       return false;
+    });
+
 	if (imgLength === 1) {
 		lastCol.removeClass('col-lg-12');
 		lastCol.addClass('col-lg-4 col-sm-4');
